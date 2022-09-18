@@ -15,7 +15,7 @@ type IPorps = {
     height: string;
   };
 };
-const EchartsIndex: FC<IPorps> = ({ xData, legendData, seriesData,barStyle}) => {
+const BarIndex: FC<IPorps> = ({ xData, legendData, seriesData,barStyle}) => {
   const chartRef = useRef<HTMLDivElement | null>(null);
 
   const options = {
@@ -67,4 +67,4 @@ const EchartsIndex: FC<IPorps> = ({ xData, legendData, seriesData,barStyle}) => 
   );
 };
 
-export default EchartsIndex;
+export default BarIndex;

@@ -1,7 +1,7 @@
 import React,{FC,Fragment,useState,} from 'react';
 import {uuid} from './uuid'
 import Home from "./Home"
-import EchartsIndex from './EchartsIndex'
+import BarIndex from './BarIndex'
 interface listType{
   name:string,
   age:number,
@@ -100,7 +100,7 @@ const App:FC=() =>{
   <div>
     <h1>子组件</h1>
   <Home list={list} getChangeList={getChangeList}/>
-  <EchartsIndex xData={xData} legendData={legendData} seriesData={seriesData} barStyle={barStyle}/>
+  <BarIndex xData={xData} legendData={legendData} seriesData={seriesData} barStyle={barStyle}/>
   </div>
     </Fragment>
   );
